@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>982</width>
+    <height>661</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QWidget" name="welcomWidget" native="true">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>981</width>
+     <height>661</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>260</x>
+      <y>40</y>
+      <width>421</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 20pt &quot;Noto Serif&quot;;
+color: rgb(255, 0, 0);</string>
+    </property>
+    <property name="text">
+     <string>Heart Disease Prediction</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>35</x>
+      <y>151</y>
+      <width>921</width>
+      <height>431</height>
+     </rect>
+    </property>
+    <property name="html">
+     <string>&lt;!DOCTYPE HTML PUBLIC &quot;-//W3C//DTD HTML 4.0//EN&quot; &quot;http://www.w3.org/TR/REC-html40/strict.dtd&quot;&gt;
+&lt;html&gt;&lt;head&gt;&lt;meta name=&quot;qrichtext&quot; content=&quot;1&quot; /&gt;&lt;style type=&quot;text/css&quot;&gt;
+p, li { white-space: pre-wrap; }
+&lt;/style&gt;&lt;/head&gt;&lt;body style=&quot; font-family:'MS Shell Dlg 2'; font-size:7.8pt; font-weight:400; font-style:normal;&quot;&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:14pt; font-weight:600;&quot;&gt;About Dataset&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:14pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;This data set dates from 1988 and consists of four databases: Cleveland, Hungary, Switzerland, and Long Beach V. It contains 76 attributes, including the predicted attribute, but all published experiments refer to using a subset of 14 of them. The &amp;quot;target&amp;quot; field refers to the presence of heart disease in the patient. It is integer valued 0 = no disease and 1 = disease.&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:8pt;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p align=&quot;center&quot; style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Attribute Information:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot;-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px; font-size:12pt; font-weight:600;&quot;&gt;&lt;br /&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;	Age:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; age of the patient [years]&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;	Sex:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; sex of the patient [M: Male, F: Female]&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;	CP: &lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;chest pain type [TA: Typical Angina, ATA: Atypical Angina, NAP: Non-Anginal Pain, ASY: Asymptomatic]&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;	RestBP:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; resting blood pressure [mm Hg]Angina, NAP:&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;	Chol:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; serum cholesterol [mm/dl]&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;	FBS:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; fasting blood sugar [1: if FastingBS &amp;gt; 120 mg/dl, 0: otherwise]&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;	RestECG:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; resting electrocardiogram results [Normal: Normal, ST: having ST-T wave abnormality]&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;	Thalach:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; maximum heart rate achieved [Numeric value between 60 and 202]&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;	Exang:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; exercise-induced angina [Y: Yes, N: No]&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;	Oldpeak:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; oldpeak = ST [Numeric value measured in depression]&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;	Slope:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; the slope of the peak exercise ST segment [Up: upsloping, Flat: flat, Down: downsloping]&lt;/span&gt;&lt;/p&gt;
+&lt;p style=&quot; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;&quot;&gt;&lt;span style=&quot; font-size:10pt; font-weight:600;&quot;&gt;	Target:&lt;/span&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt; output class [1: heart disease, 0: Normal]&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>310</x>
+      <y>600</y>
+      <width>341</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 57 16pt &quot;Raleway Medium&quot;;
+color: rgb(0, 170, 255);
+border-color: rgb(0, 170, 255);</string>
+    </property>
+    <property name="text">
+     <string>Let's get Started</string>
+    </property>
+   </widget>
+   <widget class="QWidget" name="widget1" native="true">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>981</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(255, 255, 255);</string>
+    </property>
+    <widget class="QLabel" name="label_2">
+     <property name="geometry">
+      <rect>
+       <x>250</x>
+       <y>80</y>
+       <width>431</width>
+       <height>61</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 63 italic 17pt &quot;Open Sans SemiBold&quot;;</string>
+     </property>
+     <property name="text">
+      <string>La saisie manuelle des données</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="next1">
+     <property name="geometry">
+      <rect>
+       <x>790</x>
+       <y>580</y>
+       <width>131</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 14pt &quot;MS Shell Dlg 2&quot;;
+
+color: rgb(255, 255, 255);
+background-color: rgb(255, 255, 0);</string>
+     </property>
+     <property name="text">
+      <string>Next</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_30">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>490</y>
+       <width>31</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>K:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_50">
+     <property name="geometry">
+      <rect>
+       <x>270</x>
+       <y>490</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Kernel:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_60">
+     <property name="geometry">
+      <rect>
+       <x>470</x>
+       <y>490</y>
+       <width>81</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>max depth:</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_70">
+     <property name="geometry">
+      <rect>
+       <x>670</x>
+       <y>490</y>
+       <width>171</width>
+       <height>41</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">font: 75 10pt &quot;MS Shell Dlg 2&quot;;</string>
+     </property>
+     <property name="text">
+      <string>Nombre des arbres:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit0">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>495</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_30">
+     <property name="geometry">
+      <rect>
+       <x>570</x>
+       <y>495</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit_40">
+     <property name="geometry">
+      <rect>
+       <x>830</x>
+       <y>495</y>
+       <width>71</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QComboBox" name="comboBox0">
+     <property name="geometry">
+      <rect>
+       <x>340</x>
+       <y>495</y>
+       <width>75</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <item>
+      <property name="text">
+       <string>linear</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>rbf</string>
+      </property>
+     </item>
+     <item>
+      <property name="text">
+       <string>poly</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget">
+     <property name="geometry">
+      <rect>
+       <x>50</x>
+       <y>220</y>
+       <width>861</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <row>
+      <property name="text">
+       <string>1</string>
+      </property>
+     </row>
+     <column>
+      <property name="text">
+       <string>age</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>sex</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>cp</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>trestbps</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>chol</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>fbs</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>restecg</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>thalach</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>exang</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>oldpeak</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>slope</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>ca</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>thal</string>
+      </property>
+     </column>
+     <item row="0" column="0">
+      <property name="text">
+       <string>65</string>
+      </property>
+     </item>
+     <item row="0" column="1">
+      <property name="text">
+       <string>1</string>
+      </property>
+     </item>
+     <item row="0" column="2">
+      <property name="text">
+       <string>2</string>
+      </property>
+     </item>
+     <item row="0" column="3">
+      <property name="text">
+       <string>172</string>
+      </property>
+     </item>
+     <item row="0" column="4">
+      <property name="text">
+       <string>199</string>
+      </property>
+     </item>
+     <item row="0" column="5">
+      <property name="text">
+       <string>1</string>
+      </property>
+     </item>
+     <item row="0" column="6">
+      <property name="text">
+       <string>1</string>
+      </property>
+     </item>
+     <item row="0" column="7">
+      <property name="text">
+       <string>190</string>
+      </property>
+     </item>
+     <item row="0" column="8">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="9">
+      <property name="text">
+       <string>0.5</string>
+      </property>
+     </item>
+     <item row="0" column="10">
+      <property name="text">
+       <string>2</string>
+      </property>
+     </item>
+     <item row="0" column="11">
+      <property name="text">
+       <string>0</string>
+      </property>
+     </item>
+     <item row="0" column="12">
+      <property name="text">
+       <string>3</string>
+      </property>
+     </item>
+    </widget>
+    <widget class="QTableWidget" name="tableWidget_2">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>350</y>
+       <width>511</width>
+       <height>91</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">border-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgba(0, 0, 0, 255), stop:1 rgba(255, 255, 255, 255));</string>
+     </property>
+     <column>
+      <property name="text">
+       <string>KN</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>KNN</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>SVM</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>RFOREST</string>
+      </property>
+     </column>
+    </widget>
+   </widget>
+  </widget>
+ </widget>
+ <tabstops>
+  <tabstop>textBrowser</tabstop>
+  <tabstop>next1</tabstop>
+  <tabstop>pushButton</tabstop>
+ </tabstops>
+ <resources>
+  <include location="images/knn.qrc"/>
+  <include location="images/Dtree.qrc"/>
+  <include location="images/rforest.qrc"/>
+  <include location="images/svm.qrc"/>
+ </resources>
+ <connections/>
+</ui>

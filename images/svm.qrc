@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="svm">
+    <file>SVM_free-file.png</file>
+  </qresource>
+</RCC>
